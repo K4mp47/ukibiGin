@@ -4,7 +4,7 @@ export default function Grid() {
   return (
     <section
       id="launch-schedule"
-      className="mx-auto w-full px-4 sm:px-6 md:px-8 pt-80 text-white"
+      className="mx-auto w-full mt-20 px-4 sm:px-6 md:px-8 pt-80 text-white"
     >
       <motion.h1
         initial={{ y: 58, opacity: 0 }}

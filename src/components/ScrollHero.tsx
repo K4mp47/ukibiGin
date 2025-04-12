@@ -8,7 +8,7 @@ function ScrollHero() {
 
   const opacity = useTransform(
     scrollY,
-    [SECTION_HEIGHT, SECTION_HEIGHT + 80],
+    [SECTION_HEIGHT, SECTION_HEIGHT + 1],
     [1, 0]
   );
 
@@ -20,7 +20,7 @@ function ScrollHero() {
 
   return (
     <div
-      style={{ height: `calc(${SECTION_HEIGHT}px + 100vh)`}}
+      style={{ height: `calc(${SECTION_HEIGHT}px + 130vh)`}}
       className='w-full'
     >
       <motion.div 
@@ -62,7 +62,7 @@ const CenterImage = () => {
   );
   const opacity = useTransform(
     scrollY,
-    [SECTION_HEIGHT, SECTION_HEIGHT + 600],
+    [SECTION_HEIGHT + 200, SECTION_HEIGHT + 600],
     [1, 0]
   );
   
