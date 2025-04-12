@@ -1,0 +1,36 @@
+[
+  {
+    "url": "/hero3.jpg",
+    "title": "Umami Ukibi",
+    "ingredients": [
+      "35 ml gin Ukibi",
+      "15 ml elderflower liquor",
+      "45 ml cucumber, lemongrass, sichuan pepper cordial",
+      "10ml soda"
+    ],
+    "description": "prendi un cubone,versa 35 ml di gin,15 ml di  elderflower,cordiale e top di soda",
+    "id": 1
+  },
+  {
+    "url": "/hero12.jpg",
+    "title": "Ukibi sour",
+    "ingredients": [
+      "50 ml gin Ukibi",
+      "22.5 ml fresh lemon juice",
+      "30 ml simple syrup"
+    ],
+    "description": "Versa 50 ml di gin,30 ml di limone e 22.5 di sciroppo di zucchero e shakera intensamente tutto,raffredda il bicchiere fai double strain di tutto", 
+    "id": 2
+  },
+  {
+    "url": "/hero11.jpg",
+    "title": "Ukibi gin tonic",
+    "ingredients": [
+      "50 ml Gin Ukibi",
+      "1 tonica fever three"
+    ],
+    "description": "Versa 50 ml di gin e successivamente versa la tonica e guarnisci con una bella fetta di lime",
+    "id": 3
+  }
+]
+

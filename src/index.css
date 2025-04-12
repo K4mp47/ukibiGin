@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+:root {
+  --primary: #000000;
+  --primary-content: #808080;
+  --primary-dark: #000000;
+  --primary-light: #1a1a1a;
+
+  --secondary: #000000;
+  --secondary-content: #808080;
+  --secondary-dark: #000000;
+  --secondary-light: #1a1a1a;
+
+  --background: #1b1818;
+  --foreground: #292323;
+  --border: #453b3b;
+
+  --copy: #fbfbfb;
+  --copy-light: #dcd6d6;
+  --copy-lighter: #ac9f9f;
+
+  --success: #000000;
+  --warning: #000000;
+  --error: #000000;
+  --success-content: #808080;
+  --warning-content: #808080;
+  --error-content: #808080;
+}
+
+#root {
+  margin: 0 !important; 
+  padding: 0 !important;
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+.orbitron {
+  font-family: "Fraunces", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "SOFT" 0,
+    "WONK" 0;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  background: var(--primary);
+  color: var(--copy);
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  scroll-behavior: smooth;
+}
