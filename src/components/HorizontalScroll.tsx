@@ -21,7 +21,7 @@ const HorizontalScrollCarousel = ({ setSelectedImage, setSelectedCardId }: {
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ ease: "easeInOut", duration: 0.50 }} 
           style={{ x }} 
-          className="flex gap-[4rem] md:pl-8 lg:pl-12 w-full items-center justify-center"
+          className="flex gap-[4rem] md:pl-8 lg:pl-12"
         >
           {cards.map((card) => (
             <Card key={card.id} card={card} setSelectedCardId={setSelectedCardId} setSelectedImage={setSelectedImage}  />
