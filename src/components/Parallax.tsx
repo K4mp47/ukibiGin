@@ -5,8 +5,8 @@ import { motion, useTransform, useMotionTemplate } from "framer-motion";
 const ParallaxImages = () => {
   return (
     <div className="relative mx-auto max-w-5xl pt-[200px]">
-      <div className="sticky top-0 h-screen overflow-hidden lg:overflow-visible bg-[var(--primary)]">
-        <div className="absolute inset-0 flex items-center mix-blend-difference justify-center z-50 w-full">
+      <div className="sticky top-0 h-screen overflow-hidden lg:overflow-visible bg-[var(--copy)]">
+        <div className="absolute inset-0 flex items-center text-black font-black justify-center z-50 w-full">
           <div className="text-[3.6rem] md:text-[10rem] lg:text-[8rem] text-center transition-all">
             Gusto eccezionale. Squisitamente artigianale.
           </div>
@@ -88,3 +88,4 @@ const ParallaxImg = ({ className, alt, src, start, end }: ParallaxImgProps) => {
 };
 
 export default ParallaxImages;
+

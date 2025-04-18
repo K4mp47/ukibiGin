@@ -49,12 +49,12 @@ function App() {
 
 const Block = ({ setSelectedImage, setSelectedCardId }: { setSelectedImage: (url: string | null) => void, setSelectedCardId: (id: number | null) => void }) => {
   return (
-    <motion.div className="bg-[var(--primary)]">
+    <motion.div className="bg-[var(--copy)]">
       <HorizontalScrollCarousel setSelectedImage={setSelectedImage} setSelectedCardId={setSelectedCardId} />
       <ParallaxImages />
       <div className='h-[20vh] w-full flex justify-center'>
-        <p className="max-w-3xl mx-[1rem] text-xl md:text-xl text-gray-300 mb-12">
-          Il <b className='text-[#FF0049]'>Gin Ukibi</b> è ispirato ai numerosi viaggi fatti dal suo fondatore, 
+        <p className="max-w-3xl mx-[1rem] text-xl md:text-xl text-gray-600 mb-12">
+          Il Gin Ukibi è ispirato ai numerosi viaggi fatti dal suo fondatore, 
           i quali l'hanno portato a sperimentare gusti e sapori nuovi che l'hanno aiutato a creare il prodotto finale.
           La parte più complessa della sua formulazione è stato senza dubbio il gusto.
           Il nostro obbiettivo era quello di renderlo il più piacevole e bilanciato possibile.

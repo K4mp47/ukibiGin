@@ -19,15 +19,15 @@ export default function Footer() {
   return (
     <footer
       id="footer"
-      className="bg-augen-dark text-white font-light mt-[40vh] lg:mt-[80vh]"
+      className="bg-augen-dark text-black font-light mt-[40vh] lg:mt-[80vh]"
     >
       <div className="mx-4 md:mx-8 py-12 w-auto">
         {/* Pages and Social Media Links Section */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12 w-full">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-8 lg:mb-12 w-full">
           {/* Pages Column */}
           <div className="w-full">
             <div className="flex items-center gap-3 mb-8">
-              <span className="text-white text-lg font-semibold tracking-wide">
+              <span className="text-black text-lg font-semibold tracking-wide">
                 Follow us
               </span>
             </div>
@@ -44,18 +44,18 @@ export default function Footer() {
           </div>
           <div className="w-full">
             <div className="flex items-center gap-3 mb-8">
-              <span className="text-white text-lg tracking-wide font-semibold">
+              <span className="text-black text-lg tracking-wide font-semibold">
                 Contact us
               </span>
             </div>
             <ul className="space-y-4 text-left">
               <li>
                 <span className="tracking-wide w-4 h-4 font-mono">
-                  +39 3477192135
+                  +39 338 1693578
                 </span>
               </li>
               <li>
-                <span className="tracking-wide w-4 h-4">example@gmail.com</span>
+                <span className="tracking-wide w-4 h-4">Commerciale@infoukibigin.com</span>
               </li>
             </ul>
           </div>
@@ -70,9 +70,6 @@ export default function Footer() {
             >
               Privacy Policy
             </button>
-            <span className="text-augen-gray ml-0 md:ml-4 tracking-wide">
-              Italy, Venice
-            </span>
           </div>
         </div>
       </div>
@@ -81,19 +78,22 @@ export default function Footer() {
         <h2 className="text-xl font-bold text-neutral-200">
           Privacy Policy
         </h2>
-Informativa privacy e cookie policy, ai sensi dell’art 13 del Regolamento Generale per la Protezione
+        Informativa privacy e cookie policy, ai sensi dell’art 13 del Regolamento Generale per la Protezione
 dei Dati UE 2016/679 (GDPR), in materia di protezione dei dati personali.
+<br></br>
+<br></br>
 1. Titolare del trattamento
-La DITTA, con sede legale in ___________, via _____________ n. ____ è titolare del
+La DITTA, con sede legale a Venezia (VE) Sestiere Castello 6351 CAP 30122 è titolare del
 trattamento dei dati personali acquisiti attraverso il proprio sito web ed è costantemente
 impegnata proteggere le informazioni personali dei propri utenti.
 In questa pagina si descrivono le modalità generali del trattamento dei dati personali degli
-utenti del sito e dei cookies.
+utenti del sito e dei cookies, i quali non sono presenti nel sito.
 L’informativa è resa solo per questo sito e non anche per altri siti web eventualmente consultati
 dall’utente tramite link.
 Il Titolare del Trattamento (di seguito Titolare) e/o il Responsabile della Protezione dei Dati
-possono essere contattati scrivendo un’email all’indirizzo ________@_____.it oppure per via
-telefonica al servizio di assistenza clienti al numero ____________.
+possono essere contattati scrivendo un’email all’indirizzo Commerciale@infoukibigin.com
+<br></br>
+<br></br>
 2. Modalità del trattamento
 Questo documento è stato redatto ai sensi dell’art. 13 del Regolamento UE 2016/679 (di seguito
 GDPR), e riepiloga le modalità generali del trattamento dei tuoi dati personali e come le relative
@@ -114,11 +114,14 @@ normale esercizio, alcuni dati relativi ai protocolli di comunicazione di Intern
 corretto funzionamento dei servizi offerti, della risoluzione di eventuali problemi tecnici e della
 sicurezza informatica.
 In questa categoria rientrano i seguenti dati :
+<br></br>
 • indirizzi IP;
 • data e ora in cui sono state ricevute le richieste al server;
 • il codice numerico indicante lo stato della risposta data dal server (buon fine, errore, ecc.);
 • indirizzo URI/URL della pagina di provenienza (referrer);
 • stringa di riconoscimento del dispositivo che accede al sito (user agent);
+<br></br>
+<br></br>
 3. Finalità del trattamento
 Ad eccezione dei dati di navigazione, si precisa che per la sola consultazione del sito (in
 “modalità vetrina”) nessun dato personale degli utenti viene in proposito acquisito.Tuttavia l’invio facoltativo, esplicito e volontario di dati forniti dall’utente, mediante moduli e
@@ -139,6 +142,8 @@ c. protezione del sito (sicurezza informatica).
 I dati di navigazione serviranno anche per evitare possibili azioni o minacce da parte di utenti
 malevoli (hacker, bot, spam, ecc.) nonché per l’accertamento di responsabilità in caso di
 ipotetici reati informatici ai danni del sito.
+<br></br>
+<br></br>
 4. Base giuridica del trattamento
 La base giuridica del trattamento si fonda sull’esecuzione di contratti di cui il cliente è parte
 attiva ovvero sull’esecuzione di misure precontrattuali adottate su richiesta.
@@ -146,6 +151,8 @@ Il trattamento potrà effettuarsi anche per adempiere ad obblighi di legge ai qu
 Titolare del trattamento ovvero nei casi in cui ricorrano condizioni di liceità del trattamento
 determinate dall’art. 6 del GDPR e successive modifiche e integrazioni, anche introdotte dallo
 Stato.
+<br></br>
+<br></br>
 5. Informazioni a garanzia di un trattamento corretto e trasparente
 Ai sensi dell’art. 13 comma 2 del GDPR, si forniscono al cliente le seguenti ulteriori informazioni
 necessarie per garantire un trattamento corretto e trasparente:
@@ -171,11 +178,13 @@ Nel caso tu acconsenta al trattamento dei dati anche per le finalità di “prof
 “promozione”, saranno impiegati ulteriori processi decisionali automatizzati finalizzati
 esclusivamente ad adattare il più possibile la nostra offerta commerciale al tuo profilo e alle tue
 necessità.
+<br></br>
+<br></br>
 6. Ambito di diffusione e comunicazione dei dati personali
 Nessuno dei dati personali forniti sarà diffuso. I tuoi dati personali potranno essere comunicati
 ai seguenti destinatari e categorie di destinatari nella misura in cui ciò sia strettamente
 necessario al perseguimento delle finalità come sopra specificate:
-a. DITTA, con sede legale in ___________, via _____________ n. ____
+a. DITTA, con sede legale a Venezia (VE) Sestiere Castello 6351
 b. soggetti terzi della cui opera il Titolare si avvale per la fornitura di servizi, comunque connessi
 al perseguimento delle finalità di cui alla presente informativa, fra cui l’invio delle
 comunicazioni promozionali e le spedizioni dei beni;
@@ -196,6 +205,8 @@ Per la loro fruizione, alcune funzionalità dell’App richiedono il tuo consens
 risorse presenti nel tuo apparecchio quali, ad esempio, foto, rubrica telefonica, sensore GPS.
 L’App utilizzerà queste risorse ed i dati eventualmente ricavati esclusivamente in locale sul tuo
 dispositivo per dare esecuzione alle tue richieste.
+<br></br>
+<br></br>
 7. Diritti degli utenti
 I diritti dei clienti sono disciplinati dagli articoli 15 e seguenti del GDPR.
 In qualunque momento potrai rivolgerti al Titolare ed al suo Responsabile della Protezione dei
@@ -205,7 +216,7 @@ potrai integrarli e rettificarli ai sensi dell’art. 16 GDPR, ottenerne la canc
 dell’art. 17 GDPR, ottenere la limitazione del trattamento ai sensi dell’art. 18 GDPR, ottenere in
 un formato strutturato, di uso comune e leggibile da dispositivo automatico, i tuoi dati personali
 secondo le modalità dell’art. 20 GDPR.8. Entrata in vigore della privacy policy e comunicazione di modifiche ed aggiornamenti
-La presente privacy policy è in vigore dal __/__/2025.
+La presente privacy policy è in vigore dal 15/04/2025.
 DITTA si riserva di modificarne o semplicemente aggiornarne il contenuto, in parte o
 completamente, anche in considerazione degli aggiornamenti della normativa applicabile.
 Sarai informato di tali variazioni non appena verranno introdotte ed esse saranno vincolanti non

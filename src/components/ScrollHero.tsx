@@ -27,7 +27,7 @@ function ScrollHero() {
         className='fixed w-screen h-screen flex items-center justify-center text-[10rem]'
         style={{opacity}}
       >
-        <img src="/ginlogo.png" alt="Gin Logo" className="invert" />
+        <img src="/ginlogo.png" alt="Gin Logo" className="" />
         <motion.div
           className='absolute bottom-8 left-1/2 transform -translate-x-1/2'
           initial={{ opacity: 1 }}
@@ -75,12 +75,13 @@ const CenterImage = () => {
         opacity,
         backgroundPosition: "center",
         backgroundColor: "var(--primary)",
-        backgroundImage: `url(${"/hero10.jpg"})`,
+        backgroundImage: `url(${"/hero17.jpg"})`,
         backgroundRepeat: "no-repeat",
       }}
     >
-      <div className="flex items-end justify-start h-full w-full orbitron pb-2 pl-2 md:pl-10 md:pb-8 text-[2rem] md:text-[10rem] text-white">
-        New <b className="text-[#FF0049]">&nbsp;Flavour</b>, new Style
+      <div className="flex items-end justify-start h-full w-full orbitron font-bold pb-2 pl-2 md:pl-10 md:pb-8 text-[2rem] md:text-[8rem] text-white">
+        {/* New <b className="text-[#FF0049]">&nbsp;Flavour</b>, new Style */}
+        New Flavour, new Style
       </div>
     </motion.div>
   )

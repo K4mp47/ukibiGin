@@ -15,7 +15,7 @@ const HorizontalScrollCarousel = ({ setSelectedImage, setSelectedCardId }: {
 
   return (
     <section ref={targetRef} className="relative h-[300vh]">
-      <div className="sticky ml-0 lg:ml-[9rem] top-0 flex h-screen items-center overflow-hidden lg:overflow-visible lg:overflow-x-visible">
+      <div className="sticky bg-white text-black ml-0 lg:ml-[9rem] top-0 flex h-screen items-center overflow-hidden lg:overflow-visible lg:overflow-x-visible">
         <motion.div 
           initial={{ y: 80, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}

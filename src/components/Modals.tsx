@@ -86,7 +86,7 @@ export default function ImageModal({
         <motion.div
           onWheel={handleDesktopScroll}
           onTouchMove={handleMobileTouch}
-          className={`flex-1 overflow-y-auto p-6 text-white 
+          className={`flex-1 overflow-y-auto p-6 text-black bg-white 
             ${
               isMobile
                 ? "touch-pan-y"
@@ -94,12 +94,12 @@ export default function ImageModal({
             }`}
           transition={{ duration: 1, ease: "easeInOut" }}
         >
-          <h2 className="text-4xl font-black mb-4">
+          <h2 className="text-4xl font-black mb-4 uppercase">
             {cards.find((card) => card.id === selectedCardId)?.title}
           </h2>
           <p className="mb-4 pl-5 font-bold text-lg text-left">Ingredienti</p>
 
-          <ul className=" pl-5 space-y-2 mb-6 text-left">
+          <ul className=" pl-5 space-y-2 mb-6 text-left text-gray-600">
             {/* {Array.from({ length: 8 }).map((_, i) => (
               <li key={`ingredient-${i}`}>Botanical ingredient {i + 1}</li>
             ))} */}
@@ -110,7 +110,7 @@ export default function ImageModal({
               ))}
           </ul>
           <h3 className="text-3xl font-black mb-3">Descrizione</h3>
-          <p className="p-8 text-left">
+          <p className="p-8 text-left text-gray-600">
             {cards.find((card) => card.id === selectedCardId)?.description}
           </p>
         </motion.div>
