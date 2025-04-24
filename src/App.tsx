@@ -1,6 +1,7 @@
 import './App.css'
 import ReactLenis, { LenisRef } from 'lenis/react';
-import { AnimatePresence, motion, useMotionValueEvent, useScroll } from 'framer-motion';
+import { AnimatePresence, motion } from 'framer-motion';
+// import { useMotionValueEvent, useScroll } from 'framer-motion';
 import { useEffect, useRef, useState } from 'react';
 import Schedule from './components/Schedule';
 import ScrollHero from './components/ScrollHero';
@@ -65,85 +66,85 @@ const Block = ({ setSelectedImage, setSelectedCardId }: { setSelectedImage: (url
   );
 };
 
-const NavBar = () => {
+// const NavBar = () => {
 
-  const click = `
+//   const click = `
   
-─▄▀▀▀▀▄─█──█────▄▀▀█─▄▀▀▀▀▄─█▀▀▄
-─█────█─█──█────█────█────█─█──█
-─█────█─█▀▀█────█─▄▄─█────█─█──█
-─▀▄▄▄▄▀─█──█────▀▄▄█─▀▄▄▄▄▀─█▄▄▀
+// ─▄▀▀▀▀▄─█──█────▄▀▀█─▄▀▀▀▀▄─█▀▀▄
+// ─█────█─█──█────█────█────█─█──█
+// ─█────█─█▀▀█────█─▄▄─█────█─█──█
+// ─▀▄▄▄▄▀─█──█────▀▄▄█─▀▄▄▄▄▀─█▄▄▀
 
-─────────▄██████▀▀▀▀▀▀▄
-─────▄█████████▄───────▀▀▄▄
-──▄█████████████───────────▀▀▄
-▄██████████████─▄▀───▀▄─▀▄▄▄──▀▄
-███████████████──▄▀─▀▄▄▄▄▄▄────█
-█████████████████▀█──▄█▄▄▄──────█
-███████████──█▀█──▀▄─█─█─█───────█
-████████████████───▀█─▀██▄▄──────█
-█████████████████──▄─▀█▄─────▄───█
-█████████████████▀███▀▀─▀▄────█──█
-████████████████──────────█──▄▀──█
-████████████████▄▀▀▀▀▀▀▄──█──────█
-████████████████▀▀▀▀▀▀▀▄──█──────█
-▀████████████████▀▀▀▀▀▀──────────█
-──███████████████▀▀─────█──────▄▀
-──▀█████████████────────█────▄▀
-────▀████████████▄───▄▄█▀─▄█▀
-──────▀████████████▀▀▀──▄███
-──────████████████████████─█
-─────████████████████████──█
-────████████████████████───█
-────██████████████████─────█
-────██████████████████─────█
-────██████████████████─────█
-────██████████████████─────█
-────██████████████████▄▄▄▄▄█
+// ─────────▄██████▀▀▀▀▀▀▄
+// ─────▄█████████▄───────▀▀▄▄
+// ──▄█████████████───────────▀▀▄
+// ▄██████████████─▄▀───▀▄─▀▄▄▄──▀▄
+// ███████████████──▄▀─▀▄▄▄▄▄▄────█
+// █████████████████▀█──▄█▄▄▄──────█
+// ███████████──█▀█──▀▄─█─█─█───────█
+// ████████████████───▀█─▀██▄▄──────█
+// █████████████████──▄─▀█▄─────▄───█
+// █████████████████▀███▀▀─▀▄────█──█
+// ████████████████──────────█──▄▀──█
+// ████████████████▄▀▀▀▀▀▀▄──█──────█
+// ████████████████▀▀▀▀▀▀▀▄──█──────█
+// ▀████████████████▀▀▀▀▀▀──────────█
+// ──███████████████▀▀─────█──────▄▀
+// ──▀█████████████────────█────▄▀
+// ────▀████████████▄───▄▄█▀─▄█▀
+// ──────▀████████████▀▀▀──▄███
+// ──────████████████████████─█
+// ─────████████████████████──█
+// ────████████████████████───█
+// ────██████████████████─────█
+// ────██████████████████─────█
+// ────██████████████████─────█
+// ────██████████████████─────█
+// ────██████████████████▄▄▄▄▄█
 
-─────────────█─────█─█──█─█───█
-─────────────█─────█─█──█─▀█─█▀
-─────────────█─▄█▄─█─█▀▀█──▀█▀
-─────────────██▀─▀██─█──█───█
+// ─────────────█─────█─█──█─█───█
+// ─────────────█─────█─█──█─▀█─█▀
+// ─────────────█─▄█▄─█─█▀▀█──▀█▀
+// ─────────────██▀─▀██─█──█───█
 
-@K4mp47
-  `;
+// @K4mp47
+//   `;
 
-  const { scrollY } = useScroll();
-  const [hidden, setHidden] = useState(true);
+//   const { scrollY } = useScroll();
+//   const [hidden, setHidden] = useState(true);
 
-  useMotionValueEvent(scrollY, "change", (latest) => {
-    const previous = scrollY.getPrevious();
+//   useMotionValueEvent(scrollY, "change", (latest) => {
+//     const previous = scrollY.getPrevious();
     
-    // If scrolling down more than 50px and previous scroll was less
-    if (previous &&latest > 50 && latest > previous) {
-      setHidden(true);
-    } 
-    // If scrolling up
-    else if (previous && latest < previous) {
-      setHidden(false);
-    }
-  });
+//     // If scrolling down more than 50px and previous scroll was less
+//     if (previous &&latest > 50 && latest > previous) {
+//       setHidden(true);
+//     } 
+//     // If scrolling up
+//     else if (previous && latest < previous) {
+//       setHidden(false);
+//     }
+//   });
 
-  return (
-    <motion.nav 
-      variants={{
-        visible: { y: 0 },
-        hidden: { y: "-100%" }
-      }}
-      animate={hidden ? "hidden" : "visible"}
-      transition={{ duration: 0.3, ease: "easeInOut" }}
-      className='fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-4 py-3 md:px-6 md:py-4'
-    >
-      <button 
-        className='flex items-center py-2 lg:px-4 mix-blend-difference backdrop-blur-md font-bold transition-all relative z-10'
-        onClick={() => console.log(click)}
-      >
-        Ukibi Gin
-      </button>
-    </motion.nav>
-  )
-}
+//   return (
+//     <motion.nav 
+//       variants={{
+//         visible: { y: 0 },
+//         hidden: { y: "-100%" }
+//       }}
+//       animate={hidden ? "hidden" : "visible"}
+//       transition={{ duration: 0.3, ease: "easeInOut" }}
+//       className='fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-4 py-3 md:px-6 md:py-4'
+//     >
+//       <button 
+//         className='flex items-center py-2 lg:px-4 mix-blend-difference backdrop-blur-md font-bold transition-all relative z-10'
+//         onClick={() => console.log(click)}
+//       >
+//         Ukibi Gin
+//       </button>
+//     </motion.nav>
+//   )
+// }
 
 export default App
 
