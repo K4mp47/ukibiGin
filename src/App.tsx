@@ -29,7 +29,7 @@ function App() {
 
   return (
     <div className="relative orbitron">
-      <NavBar />
+      {/* <NavBar /> */}
       <ReactLenis root options={{ lerp: 0.05 }} ref={lenisRef}>
         <ScrollHero />
         <Schedule />
